@@ -1,0 +1,17 @@
+body {
+  font-family: Roboto, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif,
+    "D2 coding";
+  background: linear-gradient(90deg, #078ba8, #a82054);
+}
+
+.gnb {
+  height: 3.5rem;
+  border-radius: 1rem;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
