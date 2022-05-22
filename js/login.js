@@ -11,6 +11,7 @@ const onLoginSubmit = (e) => {
   const username = loginInput.value;
   localStorage.setItem(USER, username);
   paintGreeting(username);
+  todoForm.classList.remove(HIDDEN_CLASS);
 };
 
 const paintGreeting = (name) => {

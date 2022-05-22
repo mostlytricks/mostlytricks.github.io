@@ -1,13 +1,17 @@
 body {
   font-family: Roboto, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif,
     "D2 coding";
-  background: linear-gradient(90deg, #078ba8 -20%, #a82054 100%);
+  background: linear-gradient(135deg, #bcd0d4 -20%, #fbfbfb 100%);
+  height: 100vh;
 }
 
 /* gnb nav */
 .gnb {
   height: 3.5rem;
-  border-radius: 0.5rem;
+  display: flex;
+  justify-content: left;
+  padding: 0 1rem;
+  align-items: center;
 
   background: rgba(255, 255, 255, 0.45);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -15,21 +19,58 @@ body {
   -webkit-backdrop-filter: blur(5px);
 }
 .clock {
-  height: 6rem;
-  padding: auto;
+  position: absolute;
+  right: 10rem;
+  bottom: 10rem;
+  font-size: 3rem;
+  height: 12rem;
+  width: 16rem;
+
+  color: #ffffff;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0ß);
+  box-shadow: 0 8px 32px 0 rgba(150, 151, 161, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .hidden {
   display: none;
 }
 
-.bgImage {
+.main-bg {
   /* background-image: url("../images/darkmode2.jpg"); */
+  margin: 1rem auto;
   background-size: cover;
 
-  width: 1080px;
+  width: 100%;
 
-  height: 800px;
+  height: 100%;
   border-top-right-radius: 2rem;
   border-bottom-left-radius: 2rem;
+}
+.login {
+  color: #fbfbfb;
+  width: 100vw;
+  height: 15vh;
+
+  justify-content: center;
+  right: 20rem;
+
+  display: flex;
+}
+
+.todo {
+  margin: auto auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }

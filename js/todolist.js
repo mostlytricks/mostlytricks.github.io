@@ -54,6 +54,12 @@ todoForm.addEventListener("submit", toDoSubmit);
 
 const savedToDos = localStorage.getItem(TODOS_KEY);
 
+if (savedUsername === null) {
+  todoForm.classList.add(HIDDEN_CLASS);
+} else {
+  todoForm.classList.remove(HIDDEN_CLASS);
+}
+
 if (savedToDos !== null) {
   const parsedToDos = JSON.parse(savedToDos);
   toDos = parsedToDos;
