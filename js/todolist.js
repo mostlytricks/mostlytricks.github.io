@@ -8,12 +8,10 @@ const TODOS_KEY = "todos";
 
 const saveToDo = () => {
   localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
-  console.log(toDos);
 };
 
 const deleteToDo = (e) => {
   const li = e.target.parentNode;
-  console.log(li);
   toDos = toDos.filter((toDo) => {
     // 필터 사용 유의, type 유의할 것
     toDo.id !== parseInt(li.id);
@@ -58,7 +56,6 @@ const savedToDos = localStorage.getItem(TODOS_KEY);
 
 if (savedToDos !== null) {
   const parsedToDos = JSON.parse(savedToDos);
-  console.log(parsedToDos);
   toDos = parsedToDos;
   parsedToDos.forEach(paintToDo);
 }

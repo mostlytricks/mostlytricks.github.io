@@ -10,8 +10,6 @@ const onGeoLoaded = (position) => {
     })
     .then((data) => {
       //앞에서 리턴해서 파싱하는것 유의해두자.
-      console.log(data);
-
       const weatherTag = document.querySelector(".weather span:first-child");
       const cityTag = document.querySelector(".weather span:last-child");
       cityTag.innerText = `${data.name}`;
