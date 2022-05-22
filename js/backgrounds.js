@@ -1,7 +1,7 @@
 const images = ["darkmode.jpg", "darkmode2.jpg"];
 const chosenImage = images[Math.floor(Math.random() * images.length)];
 // const bgImage = document.createElement("img");
-const bgImage = document.querySelector(".main-bg");
+const bgImage = document.querySelector("div.main-bg");
 
 const pageName = "mostlytricks.github.io/";
 
