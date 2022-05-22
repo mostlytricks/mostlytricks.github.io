@@ -1,4 +1,4 @@
-const images = ["darkmode.jpg", "darkmode2.jpg"];
+const images = ["darkmode.jpg", "darkmode2.jpg", "whitemode.jpg"];
 const chosenImage = images[Math.floor(Math.random() * images.length)];
 // const bgImage = document.createElement("img");
 const bgImage = document.querySelector("div.main-bg");

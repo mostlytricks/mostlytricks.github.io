@@ -20,10 +20,10 @@ body {
 }
 .clock {
   position: absolute;
-  right: 10rem;
-  bottom: 10rem;
+  right: 5rem;
+  bottom: 5rem;
   font-size: 3rem;
-  height: 12rem;
+  height: 8rem;
   width: 16rem;
 
   color: #ffffff;
@@ -60,17 +60,81 @@ body {
 .login {
   color: #fbfbfb;
   width: 100vw;
-  height: 15vh;
+  height: 10vh;
 
   justify-content: center;
-  right: 20rem;
-
+  align-items: center;
   display: flex;
 }
 
 .todo {
-  margin: auto auto;
-  justify-content: center;
+  width: 50vw;
+  min-height: 30vh;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+
+  background: rgba(255, 255, 255, 0ß);
+  box-shadow: 0 8px 32px 0 rgba(150, 151, 161, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.todo-form {
+  position: relative;
+  margin: 1rem auto;
+  width: 50%;
+}
+.todo-form input.write {
+  height: 1.5rem;
+  width: 20rem;
+}
+.todo-form input.btn {
+  height: 1.5rem;
+}
+
+.todo-list {
+  margin-top: 1.5rem;
+  list-style-type: none;
+  color: #fbfbfb;
+  font-size: 1.5rem;
+}
+.todo-list li {
+  width: 100%;
+  height: 2rem;
+  margin: 1rem 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.todo-list li span {
+  width: 30rem;
+}
+.todo-list li div {
+  width: 50% - 5rem;
+}
+.todo-list li button {
+  position: relative;
+}
+
+/* !weather */
+.weather {
+  width: 50vw;
+  height: 14rem;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+
+  background: rgba(255, 255, 255, 0ß);
+  box-shadow: 0 8px 32px 0 rgba(150, 151, 161, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.weather .weather-detail {
+  margin: auto 0.5rem;
+  color: #e0e0e0;
 }

@@ -27,12 +27,14 @@ const paintToDo = (newToDoObj) => {
   const line = document.createElement("li");
   const span = document.createElement("span");
   const button = document.createElement("button");
+  const div = document.createElement("div");
   line.id = newToDoObj.id;
-  button.innerText = "🆇";
+  button.innerText = " x ";
   button.addEventListener("click", deleteToDo);
-  span.innerText = newToDoObj.text;
+  span.innerText = `${newToDoObj.text}  `;
 
   line.appendChild(span);
+  line.appendChild(div);
   line.appendChild(button);
   todoList.appendChild(line);
 };

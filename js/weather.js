@@ -10,10 +10,13 @@ const onGeoLoaded = (position) => {
     })
     .then((data) => {
       //앞에서 리턴해서 파싱하는것 유의해두자.
-      const weatherTag = document.querySelector(".weather span:first-child");
-      const cityTag = document.querySelector(".weather span:last-child");
+      console.log(data);
+      const weatherTag = document.querySelector(".weather div .climate");
+      const cityTag = document.querySelector(".weather div .loc");
+      const celcious = document.querySelector(".weather div .cel");
       cityTag.innerText = `${data.name}`;
       weatherTag.innerText = data.weather[0].main;
+      celcious.innerText = data.main.temp;
     });
 };
 
